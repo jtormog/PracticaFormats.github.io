@@ -4,10 +4,36 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body style="background-color: #121212; font-family: 'Source Sans Pro', sans-serif;">
+<body style="background-color: #121212; font-family: 'Source Sans Pro', sans-serif; color:#9D9D9DFF">
 <h1 style="color: #F2F2F2FF">Formulari bàsic de registre</h1>
 <form>
-<input type="text"></input>
+    <label for ="nom"><b>Nom:</b></label>
+    <input type="text" placeholder="Posa el teu nom" name="nom"></input>
+    <br>
+    <label for="cognom"><b>Cognom:</b></label>
+    <input type="text" placeholder="Posa el teu cognom" name="cognom"></input>
+    <br>
+    <label for ="contrasenya"><b>Contrasenya:</b></label>
+    <input type="password" placeholder="Introdueix la contrasenya" name="contrasenya"></input>
+    <br>
+    <label fro="poblacio"><b>Població:</b></label>
+    <select name="poblacio">
+        <option value="La Vall d'Uixó">La Vall d'Uixó</option>
+        <option value="Nules">Nules</option>
+        <option value="La Vilavella">La Vilavella</option>
+        <option value="Burriana">Burriana</option>
+        <option value="Sagunt">Sagunt</option>    
+    </select><br>
+    <label for="descripció"><b>Descripció:</b></label>
+    <textarea name="descripció" placeholder="Descripció"></textarea>
+    <label for="sexe"><b>Sexe:</b></label>
+    <input type="radio" name="sexe" value="home">Home</input>
+    <input type="radio" name="sexe" value="dona">Dona</input><br>
+    <label for="adreça electrònica"><b>Adreça electrònica:</b></label>
+    <input type="email" placeholder="Adreça electrònica" name="adreça electrònica"></input><br>
+    <input type="checkbox"value="rebre novetats i ofertes"><b>Vull rebre informació sobre novetats i ofertes.</b></input><br>
+    <input type="checkbox"value="acceptar termes i condicions"><b>Declare haver llegit i acceptat les condicions generals del programa.</b></input><br>
+    <input type="submit" value="Enviar"></input>
 </form>
 </body>
 </html>
